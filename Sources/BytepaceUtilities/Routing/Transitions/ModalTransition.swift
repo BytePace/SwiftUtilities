@@ -10,17 +10,17 @@ import UIKit
 
 open class ModalTransition: NSObject {
 
-    var animator: Animator?
-    var isAnimated: Bool = true
+    public var animator: Animator?
+    public var isAnimated: Bool = true
 
-    var modalTransitionStyle: UIModalTransitionStyle
-    var modalPresentationStyle: UIModalPresentationStyle
+    public var modalTransitionStyle: UIModalTransitionStyle
+    public var modalPresentationStyle: UIModalPresentationStyle
 
-    var completionHandler: (() -> Void)?
+    public var completionHandler: (() -> Void)?
 
     weak public var viewController: UIViewController?
 
-    init(animator: Animator? = nil,
+    public init(animator: Animator? = nil,
          isAnimated: Bool = true,
          modalTransitionStyle: UIModalTransitionStyle = .coverVertical,
          modalPresentationStyle: UIModalPresentationStyle = .fullScreen) {
